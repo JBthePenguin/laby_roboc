@@ -1,0 +1,32 @@
+Activité du cours openclassroom "Apprenez à programmer en python"  --> SUPER Cours
+
+Un labyrinthe avec un graphisme digne des années 80!!!
+
+
+Jouer à ROBOC:
+
+- se placer dans le dossier et taper "python3 roboc.py"
+
+
+Ajouter un labyrinthe:
+
+- se placer dans le dossier carte:
+	- mettre le fichier contenant le nouveau labyrinthe (format '.txt').
+	- dans carte_dispo.py, ajouter le nom du fichier à la liste ( [..., "nom_ficier.txt"] ).
+	- enregistrer et le nouveau labyrinthe devrait être dispo au lancement du jeu
+
+
+### Listes des fichiers ###
+
+readme: c'est moi
+roboc.py: le jeu
+classes.py : la classe "Carte"
+fonctions.py: les différentes fonctions du jeu
+
+Dans le dossier cartes:
+	carte_dispo.py: fichier contentant la liste des labyrinthes dispos (la variable list_cartes)
+	les fichiers '.txt' contenant les labyrinthes, présent par défaut facile.txt et prison.txt
+
+
+
+
