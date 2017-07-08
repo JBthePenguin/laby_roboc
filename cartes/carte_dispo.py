@@ -1,1 +1,1 @@
-list_cartes = ["facile.txt", "prison.txt", "test.txt"]
+list_cartes = ["facile.txt", "prison.txt", "reverse.txt"]

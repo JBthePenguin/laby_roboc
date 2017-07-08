@@ -1,8 +1,10 @@
+import pickle
+
 def choix_laby(list_cartes):
     """ fonction qui demande au joueur de choisir son labyrinthe et valide son choix:
     -- en vérifiant qu'il a bien saisi un entier
     -- puis en vérifiant que le numéro saisi corespond bien à un labyrinthe dispo,
-    et qui renvoie le nom du fichier correspondant (.txt)"""
+    et qui renvoie l'indice du fichier correspondant (.txt) dans la liste"""
 
     numero_valide = False
     while numero_valide == False:
@@ -19,7 +21,7 @@ def choix_laby(list_cartes):
         else: # on valide le choix du joueur, ce qui ne veut pas dire que le joueur est malin, attention pour la suite
             numero_valide = True
 
-    laby_choisi = list_cartes[int(laby_choisi) - 1]
+    #laby_choisi = list_cartes[int(laby_choisi) - 1]
     return laby_choisi
 
 
@@ -69,3 +71,12 @@ def choix_direction_distance():
     distance = int(distance)
     direction_distance = (direction, distance)
     return direction_distance
+
+
+def sauvegarder(partie_en_cours):
+    """fonction avec en paramètre l'objet partie en cours (classe Partie)
+    qui sauvegarde celui-ci dans un fichier save"""
+
+    with open("save", "wb") as fichier:
+        sauvegarde = pickle.Pickler(fichier)
+        sauvegarde.dump(partie_en_cours)
